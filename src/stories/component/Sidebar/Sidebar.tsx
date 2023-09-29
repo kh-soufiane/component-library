@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import './sidebar.css'
 
 const menuItems = [
     {title: "Dashboard", icon: null, target: "#"},
@@ -10,7 +11,7 @@ const menuItems = [
 
 export const Sidebar = () => {
     return (
-        <nav>
+        <nav className="nav-container">
             <ul>
                 {menuItems.map(({title, target}, index) => (
                     <li key={index}>
